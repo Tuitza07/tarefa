@@ -14,7 +14,7 @@ export default function LoginPage() {
         try {
             const res = await loginUsuario(email, senha)
             login(res.usuario, res.token)
-            if (res.usuario.nu_perfil === 1) {
+            if (res.usuario.co_perfil === 1) {
                 router.push('/admin')
             } else {
                 router.push('/minhas_interacoes')

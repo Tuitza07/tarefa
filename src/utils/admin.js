@@ -6,9 +6,9 @@ const API = axios.create({
 })
 
 // 🔹 Consultar todas interações de uma igreja
-export async function getInteracoesPorIgreja(nu_igreja, token) {
+export async function getInteracoesPorIgreja(co_igreja, token) {
     try {
-        const response = await API.get(`/admin/interacoes/${nu_igreja}`, {
+        const response = await API.get(`/admin/interacoes/${co_igreja}`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -20,10 +20,10 @@ export async function getInteracoesPorIgreja(nu_igreja, token) {
 }
 
 // 🔹 Atualizar status da interação
-export async function atualizarStatusInteracao(nu_interacao, status, co_responsavel, token) {
+export async function atualizarStatusInteracao(co_interacao, status, co_responsavel, token) {
     try {
         const response = await API.patch(
-            `/admin/interacoes/${nu_interacao}`,
+            `/admin/interacoes/${co_interacao}`,
             {
                 status,
                 co_responsavel,

@@ -20,9 +20,9 @@ export async function criarFormulario(data, token) {
 }
 
 // 🔹 Consultar formulário específico por número de interação
-export async function getFormularioDetalhado(nu_interacao, token) {
+export async function getFormularioDetalhado(co_interacao, token) {
     try {
-        const response = await API.get(`/formulario/${nu_interacao}`, {
+        const response = await API.get(`/formulario/${co_interacao}`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
