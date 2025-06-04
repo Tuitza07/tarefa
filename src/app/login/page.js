@@ -26,8 +26,22 @@ export default function LoginPage() {
 
     return (
         <div>
-            <h1>Login</h1>
-
+            <div className="login-container">
+        <h1>Login</h1>
+        <form action="#" method="POST">
+            <div className="input-group">
+                <label forhtml="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário" required/>
+            </div>
+            <div className="input-group">
+                <label forhtml="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required/>
+            </div>
+            <div className="input-group">
+                <button type="submit" class="btn">Entrar</button>
+            </div>
+        </form>
+    </div>
             <button onClick={handleLogin}>Entrar</button>
         </div>
     )

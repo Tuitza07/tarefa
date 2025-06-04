@@ -43,7 +43,34 @@ export default function PainelAdmin() {
 
     return (
         <div>
-            <h1>Painel Administrativo</h1>
+            <div className="container">
+        <h1>Acompanhamento Administrativo</h1>
+        <form action="#" method="POST">
+            <div className="form-group">
+                <label forhtml="identificador">Nome ou Identificador</label>
+                <input type="text" id="identificador" name="identificador" placeholder="Digite o nome ou identificador" required/>
+            </div>
+
+            <div className="form-group">
+                <label forhtml="tipo_acao">Tipo de Ação</label>
+                <input type="text" id="tipo_acao" name="tipo_acao" placeholder="Digite o tipo de ação" required/>
+            </div>
+
+            <div className="form-group">
+                <label forhtml="resposta">Resposta</label>
+                <input type="text" id="resposta" name="resposta" placeholder="Digite a resposta" required/>
+            </div>
+
+            <div className="form-group">
+                <label forhtml="estado_acao">Estado da Ação</label>
+                <input type="text" id="estado_acao" name="estado_acao" placeholder="Digite o estado da ação" required/>
+            </div>
+
+            <input type="submit" value="Salvar Acompanhamento"/>
+        </form>
+    </div>
+
+
 
             {/* Aqui os alunos devem criar o layout da lista de interações */}
             {/* Para cada interação, exibir nome, email, status, formularios, ações e menu de atualização */}

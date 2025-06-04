@@ -3,22 +3,23 @@ import styles from "./page.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div className="main">
       
-      <h1 className="">Bem-vindo ao Sistema de Interações</h1>
-      <p className="">
+      <h1 className="title">Bem-vindo ao Sistema de Interações</h1>
+      <p className="text">
+      
         Este é um sistema para gerenciar interações entre membros e igrejas.
       </p>
       <Image
-        src="/images/igreja.png"
+        src="/imgadv.png"
         alt="Igreja"
-        width={500}
+        width={300}
         height={300}
-        className=""
+        className="logo"
       />
-      <div className="">
-        <a href="/login" className="">Login</a>
-        <a href="/formulario" className="">Enviar Interação</a>
+      <div className="divlinks">
+        <a href="/login" className="meu-botao">login</a>
+        <a href="/formulario" className="meu-botao">Enviar Interação</a>
         <a href="/minhas_interacoes" className="">Minhas Interações</a>
         <a href="/admin" className="">Painel Administrativo</a>
       </div>
